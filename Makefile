@@ -1,13 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = ej1
+TARGET = ej4
 
 all: $(TARGET)
 
-$(TARGET): ej1.o
+$(TARGET): $(TARGET).o
 	$(CC) $(CFLAGS) $^ -o $@
 
-ej1.o: ej1.c
+$(TARGET).o: $(TARGET).c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
