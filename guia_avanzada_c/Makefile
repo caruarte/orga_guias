@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = ej13
+TARGET = ej17
 
 all: $(TARGET)
 
